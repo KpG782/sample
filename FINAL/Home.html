@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Circs | Home</title>
+    <link rel="stylesheet" type="text/css" href="Home-Style.css">
+    <!-- logo stylesheet -->
+    <link rel="stylesheet" href="css/Fontawesome.css">
+    <!--Footer Logo-->   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+     <!-- Header Starts -->
+    <div class="header">
+        <div class="title">Circs</div>
+        <img src="fooball.png" class="icon">
+        <div class="navbar">
+            <ul>
+            <li><a href="About Us.html">About Us</a></li>
+            <li><a href="Sales.html">Sales</a></li>
+            <li><a href="Customers.html">Customers</a></li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="Home.html">Home</a></li>
+            </ul>
+        </div>   
+    </div>
+    <!-- Header Finish-->
+     <!-- slider -->
+     <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">Latest Gadgets with Lowest Deals</div>
+            <a href="Products.html"><img  src="img/rtx2080.png" class="responsive" style="width:100%; height: 100%;"></a>
+            <div class="numbertext">GIGABYTE RTX2080</div>
+            <div class="numbertext">₱45570.00</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">Be Innovative</div>
+            <a href="Products.html"><img  src="img/rx570.png" class="responsive" style="width:100%; height: 100%;"></a>
+            <div class="numbertext">ASRock Phantom Gaming RX570</div>
+            <div class="numbertext">₱13500.00</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">Get now with discount</div>
+            <a href="Products.html"><img  src="img/a520.png" class="responsive" style="width:100%; height: 100%;"></a>
+            <div class="numbertext">GIGABYTE A520M-DS3H</div>
+            <div class="numbertext">₱8760.00</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            }
+    </script>
+    <!-- slider ends -->
+
+    <!--footer starts-->
+    <div class="foot">
+        <h3>Follow us!</h3>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-youtube"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <div class="cr">
+            <p>Copyright &copy; 2020 - All rights reserved. <a href="#">Terms of use</a> | <a href="#">Privacy Policy</a></p>
+        </div>
+    </div>
+    <!--footer ends-->
+    </body>
+</html>

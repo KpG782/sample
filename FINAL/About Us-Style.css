@@ -1,0 +1,234 @@
+/*Header Start*/
+@import url('https://fonts.googleapis.com/css2?family=Epilogue&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    text-align: left;
+    font-weight: bolder;
+    color: white;
+    font-family: Epilogue, sans-serif;
+    background-color: black;
+    padding-left: 15px;
+    padding-top: 7px;
+}
+
+.title{
+    font-size: 32px;
+    float:left;
+}
+
+.icon{
+    width: 2%;
+    height: 2%;
+    margin-left: 7px;
+    margin-top: 2px;
+    padding-bottom: 5px;
+}
+.navbar ul {
+    list-style-type: none;
+    margin-top: -45px;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.navbar ul li {
+    float: right;
+}
+
+.navbar ul li a {
+    display: block;
+    color: white;
+    padding: 15px 15px;
+    text-decoration: none;
+}
+
+body{
+    font-family: Epilogue, sans-serif;
+
+}
+
+.container{
+    overflow: hidden;
+    margin: 35px auto;
+    width: 95%;
+}
+
+.row{
+    display: inline-block;
+    border: 2px solid #ccc;
+    margin: 30px;
+    padding: 15px;
+    text-overflow: ellipsis;
+    height: 500px;
+}
+
+.row:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(0,0,0,0.24);
+}
+
+h2, h3{
+    margin-top: 5px;
+    text-align: center;
+}
+
+.btn{
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 45px;
+    text-decoration: none;
+    color: black;
+    /*
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    padding-bottom: 10px;
+    */
+}
+
+.btn:hover{
+    box-shadow: -2px -2px 8px white,
+    -2px -2px 12px rgba(255,255,255,0.5),
+    inset 2px 2px 4px rgba(255,255,255,0.1),
+    2px 2px 8px rgba(0,0,0,0.15);
+    color: red;
+}
+
+
+.btn-round
+{
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 45px;
+    text-decoration: none;
+    color: black;
+}
+
+.btn-round:hover{
+    box-shadow:inset -2px -2px 8px white,
+    inset -2px -2px 12px rgba(255,255,255,0.5),
+    inset 2px 2px 4px rgba(255,255,255,0.1),
+    inset 2px 2px 8px rgba(0,0,0,0.15);
+    color: red;
+}
+
+.single-product{
+    width: 300px;
+
+}
+/*Header Finish*/
+
+/*About us start*/
+.body{
+  margin: 20px 50px 20px 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  text-indent: 50px;
+}
+.building{
+  width: 80%;
+  height: 510px;
+}
+table.aboutP{
+  margin: 64px auto 64px auto;
+  position: relative;
+  border-collapse: seperate;
+  border-spacing: 50px 0px;
+}
+td.leftd{
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  width: 900px;
+}
+td.rightd{
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background-color: lightslategrey;
+  width: 400px;
+  padding: 16px;
+}
+/*About us finish*/
+
+/*Footer Start*/
+.foot{
+    background-color: #323232;
+    color: white;
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px 30% 10px 30%;
+}
+.fa {
+    padding: 5px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px;
+    border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+}
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+}
+.fa-instagram {
+    background: #125688;
+    color: white;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+.cr{
+    color:gray;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 50px 10% 20px 10%;
+}
+.cr a{
+    color:gray;
+    text-decoration: none;
+}
+.cr a:hover{
+    color: lightgrey;
+}
+.cr a:active{
+    color: gray;
+}
+/*Footer end*/
